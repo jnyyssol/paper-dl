@@ -12,7 +12,9 @@ Requires Python 3.9+ and pandas (`pip install pandas`).
 python paper_dl_gui.py
 ```
 
-Set your CSV and watch folder in the app, hit **Start**. That's it.
+Set your CSV and watch folder in the app, hit **Start**. That's it. A `sample.csv` with 5 papers is included if you want to try it out first.
+
+The window has an **Always on top** checkbox in the bottom bar, handy for keeping it visible while clicking around on publisher pages.
 
 ## Input: Scopus export
 
