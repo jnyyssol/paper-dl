@@ -155,6 +155,10 @@ class PaperDLApp:
         self.skip_btn = ttk.Button(bar, text="Skip", command=self._skip, state="disabled")
         self.skip_btn.pack(side="right")
 
+        self.topmost_var = tk.BooleanVar(value=False)
+        ttk.Checkbutton(bar, text="Always on top", variable=self.topmost_var,
+                        command=self._toggle_topmost).pack(side="right", padx=(0, 12))
+
     # ── browse callbacks ──────────────────────────────────────────────────────
 
     def _browse_csv(self):
@@ -308,6 +312,9 @@ class PaperDLApp:
         self.summary_var.set(self._summary_text())
 
     # ── button actions ────────────────────────────────────────────────────────
+
+    def _toggle_topmost(self):
+        self.root.attributes("-topmost", self.topmost_var.get())
 
     def _skip(self):
         self.skip_event.set()
