@@ -18,7 +18,7 @@ The window has an **Always on top** checkbox in the bottom bar, handy for keepin
 
 ## Input: Scopus export
 
-Export your search results from Scopus as CSV (`Export > CSV`, select all fields) and point paper-dl at that file directly, no cleanup needed. The `DOI`, `Title`, and `Link` columns are picked up automatically.
+Export your search results from Scopus as CSV (`Export > CSV`) and point paper-dl at that file directly, no cleanup needed. The `DOI`, `Title`, and `Link` columns are picked up automatically.
 
 Any CSV works as long as it has a `DOI` and/or `Link` column (case-insensitive, so lowercase variants like `doi` and `link` are fine too).
 
