@@ -1,0 +1,8 @@
+# data files — never commit these
+*.csv
+*.pdf
+
+# Python
+__pycache__/
+*.pyc
+.env
